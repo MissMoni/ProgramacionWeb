@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.d
+td">
+<html>
+    <head>
+        <title>Ejemplo</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body>
+        <h2>Formulario de registro</h2>
+        <p>Escribe tus datos de usuario en el siguiente formulario y
+        por último aprieta el botón enviar.</p>
+        <form action="http://www.miweb.com/procesarformulario" method="POST">
+        <p>
+            <label for="usuario">Usuario: </label>
+            <input name="usuario" type="text" maxlenght="32"/>
+        </p>
+        <p>
+            <label for="password">Contraseña: </label>
+            <input name="password" type="password" maxlenght="16"/>
+        </p>
+        <p>
+            <label for="nombre">Nombre completo: </label>
+            <input name="nombre" type="text" maxlenght="64"/>
+        </p>
+        <p>
+            <label for="direccion">Dirección: </label>
+            <input name="direccion" type="text" maxlenght="128"/>
+        </p>
+        <p>
+            <label for="ciudad">Ciudad: </label>
+            <select name="ciudad">
+                <option value="A Coruña">A Coruña</option>
+                <option value="Álava">Álava</option>
+                <option value="Albacete">Albacete</option>
+                <option value="Alicante">Alicante</option>
+                <option value="Almería">Almería</option>
+                <option value="Asturias">Asturias</option>
+                <!-- resto de ciudades... -->
+            </select>
+        </p>
+        <p>
+            <label for="tipo">Tipo de cliente: </label><br/>
+            <input type="radio" name="tipo" value="particular" checked/> Particular<br
+            />
+            <input type="radio" name="tipo" value="profesional"/> Profesional<br/>
+        </p>
+        <p>
+            <label for="comentarios">Comentarios: </label><br/>
+            <textarea name="comentarios" rows="4" cols="50"></textarea>
+        </p>
+        <p>
+            <input type="checkbox" name="terminos" value="terminos"/>
+            <label for="terminos">Acepto los términos y condiciones de uso</label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Borrar formulario"/>
+        </p>
+        </form>
+    </body>
+</html>
