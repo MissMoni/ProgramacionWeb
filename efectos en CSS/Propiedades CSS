@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+    <style type="text/css">
+        body { /* Redefinimos la etiqueta body */
+            padding: 0px;
+            margin: 0px;
+            font-family: arial, helvetica;
+            width: 900px;
+            margin: 0 auto;
+        }
+        h1, h2 { /* Redefinimos las etiquetas de cabecera */
+            color: navy;
+        }
+        #header { /* Estilo para la cabecera usando su identificador */
+            padding: 15px 20px;
+            background-color: #E3DAFF;
+            border-bottom: 1px solid silver;
+        }
+        #sidebar {
+            float: left;
+            width: 15%;
+        }
+        #article {
+            float: left;
+            width: 80%;
+        }
+        #footer {
+            clear: both;
+            text-align: center;
+            border-top: 1px solid silver;
+            font-size: small;
+            color: gray;
+            background-color: #E3DAFF;
+            padding: 20px;
+        }
+            #sidebar a { /* Estilo para los enlaces de la barra lateral */
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 10px 5px;
+            display: block;
+        }
+            #sidebar a:hover { /* Pseudo-clase para los enlaces */
+            background-color: navy;
+            color: white;
+        }
+            #article p {
+            line-height: 20pt;
+        }
+            .nota { /* Definimos la clase .nota */
+            background-color: yellow;
+        }
+            .alineado-derecha { /* Definimos la clase .alineado-derecha */
+            text-align: right;
+        }
+</style>
+</head>
+<body>
+    <div id="header">
+        <h1>Web de ejemplo</h1>
+    </div>
+    <div id="content">
+        <div id="sidebar" style="padding-top: 15px">
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+            <a href="#">Menu 3</a>
+            <a href="#">Menu 4</a>
+            <a href="#">Menu 5</a>
+        </div>
+        <div id="article">
+            <h2>Contenido de la pagina</h2>
+            <p>En este espacio, puede incluir diversidad de contenido en su pagina, pueen ser texto, imágenes, videos, audio, enlaces, etc. 
+            </p>
+            <p>La distribución de los mismos es de acuerdo a tu preferencia
+                <span style="font-weight:bold; color:red">todo depende de tu creatividad en el diseño web</span>.
+            </p>
+            <p>Es importante que conozcas las diferentes formas para incluir 
+                <span class="nota">estilos CSS en tu pagina web </span>.
+            </p>
+            <br/>
+
+            <audio style="align:center" src="archivo.mp3" controls>
+                <p>Tu navegador no soporta el elemento audio</p>
+            </audio>
+
+
+            <p class="alineado-derecha">Para que puedas darle una mejor presentación,
+            <br/>
+            y distribución de elementos a tu página web.
+            </p>
+        </div>
+    </div>
+    
+    <div id="footer">
+            Web de ejemplo
+            <br/>Creada por:
+    </div>
+</body>
+</html>
